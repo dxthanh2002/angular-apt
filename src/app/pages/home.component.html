@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+Home page
+<div class="card">
+  <h1>{{student.name}}</h1>
+  <p class="text-danger">{{student.address}}</p>
+  <p>{{student.age}}</p>
+
+<!--  <p *ngFor="let n of arrayNumber;let i=index">-->
+<!--    {{arrayNumber[i]}}-Xin chao cac ban-->
+<!--  </p>-->
+  <p *ngFor="let xyz of arrayNumber;">
+    {{xyz}} - Xin chao cac ban
+  </p>
+  <ul>
+    <li *ngFor="let xyz of stringArray">
+      {{xyz}}
+    </li>
+  </ul>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let st of ls">
+      <th>{{st.id}}</th>
+      <th>{{st.name}}</th>
+      <th>{{st.age}}</th>
+      <th>{{st.address}}</th>
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
